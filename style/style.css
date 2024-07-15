@@ -118,6 +118,17 @@ main>section{
     color: #ff4500;
     font-weight: 1200;
 }
+
+/* feature section related style */
+#feature-section-title{
+    border-left: 5px solid rgb(240, 117, 16);
+    padding-left: 20px;
+}
+.featured-architecd img{
+    width: 100%;
+}
+
+
 /* some facts related styles */
 .facts-container{
     display: grid;
@@ -164,7 +175,9 @@ main>section{
 /* responsive media query */
 
 @media screen and (max-width:576px) {
-    .navbar , .nav-links,
+    .navbar , 
+    .nav-links,
+    .features,
     .teams{
         flex-direction: column;
     }
@@ -194,7 +207,7 @@ main>section{
 
 /* medium size device */
 @media screen and(min-width:576px)and (max-width:992px) {
-    .teams{
+    .teams,.features{
         flex-direction: column;
     }
     .our-features{
